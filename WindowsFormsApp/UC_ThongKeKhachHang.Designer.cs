@@ -51,7 +51,7 @@ namespace WindowsFormsApp
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1254, 54);
+            this.panel2.Size = new System.Drawing.Size(1411, 68);
             this.panel2.TabIndex = 25;
             // 
             // lblTk
@@ -60,7 +60,7 @@ namespace WindowsFormsApp
             this.lblTk.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTk.Location = new System.Drawing.Point(15, 12);
             this.lblTk.Name = "lblTk";
-            this.lblTk.Size = new System.Drawing.Size(191, 29);
+            this.lblTk.Size = new System.Drawing.Size(225, 35);
             this.lblTk.TabIndex = 14;
             this.lblTk.Text = "Thống kê khách hàng";
             // 
@@ -100,7 +100,7 @@ namespace WindowsFormsApp
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(19, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 32);
+            this.label2.Size = new System.Drawing.Size(119, 38);
             this.label2.TabIndex = 47;
             this.label2.Text = "Tìm kiếm:";
             // 
@@ -147,7 +147,7 @@ namespace WindowsFormsApp
             this.dgvKh.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvKh.EnableHeadersVisualStyles = false;
             this.dgvKh.GridColor = System.Drawing.Color.Black;
-            this.dgvKh.Location = new System.Drawing.Point(20, 161);
+            this.dgvKh.Location = new System.Drawing.Point(26, 159);
             this.dgvKh.Name = "dgvKh";
             this.dgvKh.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -162,7 +162,7 @@ namespace WindowsFormsApp
             this.dgvKh.RowHeadersWidth = 62;
             this.dgvKh.RowTemplate.Height = 45;
             this.dgvKh.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvKh.Size = new System.Drawing.Size(1212, 648);
+            this.dgvKh.Size = new System.Drawing.Size(1364, 972);
             this.dgvKh.TabIndex = 197;
             this.dgvKh.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvKh.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -197,7 +197,7 @@ namespace WindowsFormsApp
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_ThongKeKhachHang";
-            this.Size = new System.Drawing.Size(1254, 834);
+            this.Size = new System.Drawing.Size(1411, 1150);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSearch)).EndInit();

@@ -60,7 +60,7 @@ namespace WindowsFormsApp
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1254, 834);
+            this.panel1.Size = new System.Drawing.Size(1411, 1150);
             this.panel1.TabIndex = 0;
             // 
             // btnXemchitiet
@@ -75,7 +75,7 @@ namespace WindowsFormsApp
             this.btnXemchitiet.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnXemchitiet.IconSize = 28;
             this.btnXemchitiet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXemchitiet.Location = new System.Drawing.Point(836, 79);
+            this.btnXemchitiet.Location = new System.Drawing.Point(1166, 83);
             this.btnXemchitiet.Name = "btnXemchitiet";
             this.btnXemchitiet.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnXemchitiet.Size = new System.Drawing.Size(217, 48);
@@ -113,6 +113,7 @@ namespace WindowsFormsApp
             this.txtTimkiem.Size = new System.Drawing.Size(296, 48);
             this.txtTimkiem.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTimkiem.TabIndex = 200;
+            this.txtTimkiem.TextChanged += new System.EventHandler(this.txtTimkiem_TextChanged_1);
             // 
             // pcbSearch
             // 
@@ -135,7 +136,7 @@ namespace WindowsFormsApp
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(7, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 32);
+            this.label2.Size = new System.Drawing.Size(119, 38);
             this.label2.TabIndex = 198;
             this.label2.Text = "Tìm kiếm:";
             // 
@@ -182,7 +183,7 @@ namespace WindowsFormsApp
             this.dgvPN.RowHeadersWidth = 62;
             this.dgvPN.RowTemplate.Height = 45;
             this.dgvPN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPN.Size = new System.Drawing.Size(1204, 665);
+            this.dgvPN.Size = new System.Drawing.Size(1359, 983);
             this.dgvPN.TabIndex = 197;
             this.dgvPN.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvPN.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -214,7 +215,7 @@ namespace WindowsFormsApp
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1254, 54);
+            this.panel2.Size = new System.Drawing.Size(1411, 68);
             this.panel2.TabIndex = 189;
             // 
             // lblTk
@@ -223,7 +224,7 @@ namespace WindowsFormsApp
             this.lblTk.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTk.Location = new System.Drawing.Point(15, 12);
             this.lblTk.Name = "lblTk";
-            this.lblTk.Size = new System.Drawing.Size(188, 29);
+            this.lblTk.Size = new System.Drawing.Size(222, 35);
             this.lblTk.TabIndex = 14;
             this.lblTk.Text = "Thống kê phiếu nhập";
             // 
@@ -263,7 +264,7 @@ namespace WindowsFormsApp
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_ThongKePhieuNhap";
-            this.Size = new System.Drawing.Size(1254, 834);
+            this.Size = new System.Drawing.Size(1411, 1150);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSearch)).EndInit();

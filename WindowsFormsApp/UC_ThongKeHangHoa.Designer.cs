@@ -59,7 +59,7 @@ namespace WindowsFormsApp
             this.pnlHangHoa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlHangHoa.Location = new System.Drawing.Point(0, 0);
             this.pnlHangHoa.Name = "pnlHangHoa";
-            this.pnlHangHoa.Size = new System.Drawing.Size(1254, 834);
+            this.pnlHangHoa.Size = new System.Drawing.Size(1411, 1150);
             this.pnlHangHoa.TabIndex = 0;
             // 
             // btnXuatBaoGia
@@ -74,7 +74,7 @@ namespace WindowsFormsApp
             this.btnXuatBaoGia.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnXuatBaoGia.IconSize = 30;
             this.btnXuatBaoGia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuatBaoGia.Location = new System.Drawing.Point(1011, 91);
+            this.btnXuatBaoGia.Location = new System.Drawing.Point(1163, 95);
             this.btnXuatBaoGia.Name = "btnXuatBaoGia";
             this.btnXuatBaoGia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnXuatBaoGia.Size = new System.Drawing.Size(217, 48);
@@ -127,7 +127,7 @@ namespace WindowsFormsApp
             this.dgvHh.RowHeadersWidth = 62;
             this.dgvHh.RowTemplate.Height = 45;
             this.dgvHh.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvHh.Size = new System.Drawing.Size(1207, 646);
+            this.dgvHh.Size = new System.Drawing.Size(1359, 955);
             this.dgvHh.TabIndex = 198;
             this.dgvHh.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvHh.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -202,7 +202,7 @@ namespace WindowsFormsApp
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(16, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 32);
+            this.label2.Size = new System.Drawing.Size(119, 38);
             this.label2.TabIndex = 44;
             this.label2.Text = "Tìm kiếm:";
             // 
@@ -213,9 +213,8 @@ namespace WindowsFormsApp
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1254, 54);
+            this.panel2.Size = new System.Drawing.Size(1411, 68);
             this.panel2.TabIndex = 24;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // lblTk
             // 
@@ -223,7 +222,7 @@ namespace WindowsFormsApp
             this.lblTk.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTk.Location = new System.Drawing.Point(15, 12);
             this.lblTk.Name = "lblTk";
-            this.lblTk.Size = new System.Drawing.Size(172, 29);
+            this.lblTk.Size = new System.Drawing.Size(202, 35);
             this.lblTk.TabIndex = 14;
             this.lblTk.Text = "Thống kê hàng hóa";
             // 
@@ -242,7 +241,7 @@ namespace WindowsFormsApp
             this.Controls.Add(this.pnlHangHoa);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_ThongKeHangHoa";
-            this.Size = new System.Drawing.Size(1254, 834);
+            this.Size = new System.Drawing.Size(1411, 1150);
             this.pnlHangHoa.ResumeLayout(false);
             this.pnlHangHoa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHh)).EndInit();

@@ -10,19 +10,19 @@ using DTO;
 
 namespace WindowsFormsApp
 {
-    public partial class UC_KhoHang : UserControl
+    public partial class UC_KhoVaccine : UserControl
     {
         private string manv, tennv;
         private string luumanv, luutennv;
-        public UC_KhoHang()    //string manv, string tennv)
+        public UC_KhoVaccine(string manv, string tennv)    //string manv, string tennv)
         {
             InitializeComponent();
             //loadData();
-            // this.manv = manv;
-            //luumanv = manv;
-            //this.tennv = tennv;
-            //luutennv = tennv;
-            cmbĐVT.SelectedIndex = 0;
+             this.manv = manv;
+            luumanv = manv;
+            this.tennv = tennv;
+            luutennv = tennv;
+            //cmbĐVT.SelectedIndex = 0;
             cmbLoaiHang.SelectedIndex = 0;
             HienThi();
             
@@ -62,13 +62,13 @@ namespace WindowsFormsApp
             txtMaMH.Text = dgvHH.Rows[indexx].Cells[0].Value.ToString();
             txtGiaBan.Text = dgvHH.Rows[indexx].Cells[4].Value.ToString();
             txtSL.Text = dgvHH.Rows[indexx].Cells[3].Value.ToString();
-            cmbĐVT.Text = dgvHH.Rows[indexx].Cells[2].Value.ToString();
+           // cmbĐVT.Text = dgvHH.Rows[indexx].Cells[2].Value.ToString();
             cmbLoaiHang.Text = dgvHH.Rows[indexx].Cells[5].Value.ToString();
             txtTenMH.ForeColor = Color.Black;
             txtMaMH.ForeColor = Color.Black;
             txtGiaBan.ForeColor = Color.Black;
             txtSL.ForeColor = Color.Black;
-            cmbĐVT.ForeColor = Color.Black;
+           // cmbĐVT.ForeColor = Color.Black;
             cmbLoaiHang.ForeColor = Color.Black;
         }
 
@@ -84,7 +84,7 @@ namespace WindowsFormsApp
         }
         private void btnNhaphang_Click(object sender, EventArgs e)
         {
-            UC_NhapHang _NhapHang = new UC_NhapHang();
+            UC_NhapHang _NhapHang = new UC_NhapHang(luumanv,luutennv);
             addUC(_NhapHang);
         }
 
@@ -100,7 +100,7 @@ namespace WindowsFormsApp
         {
 
             if (check_data() == true) {
-                if (MatHangBUS.Intance.suaHH(txtMaMH.Text, txtTenMH.Text, temp, txtGiaBan.Text, cmbĐVT.Text))
+                if (MatHangBUS.Intance.suaHH(txtMaMH.Text, txtTenMH.Text, temp, txtGiaBan.Text,txtGiaBan.Text))
                 {
                     MessageBox.Show("Sửa mặt hàng thành công", "Thông báo");
                     HienThi();
@@ -114,11 +114,7 @@ namespace WindowsFormsApp
         private string temp;
         private void cmbLoaiHang_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataTable dt = MatHangBUS.Intance.TimKiemLH(cmbLoaiHang.Text);
-            if(dt.Rows.Count > 0)
-            {
-                temp = dt.Rows[0]["MaLH"].ToString();
-            }
+            
         }
 
         private void txtKH_Leave(object sender, EventArgs e)
@@ -203,13 +199,18 @@ namespace WindowsFormsApp
             txtSL.Text = "Số lượng";
             txtSL.ForeColor = Color.Gray;
             cmbLoaiHang.SelectedIndex = 0;
-            cmbĐVT.SelectedIndex = 0;
+            //cmbĐVT.SelectedIndex = 0;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void txtTenMH_TextChanged(object sender, EventArgs e)
         {
 
         }
+
+
+
+      
+        
 
         private void HienThi()
         {
